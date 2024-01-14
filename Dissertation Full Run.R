@@ -26,7 +26,7 @@ library("forcats")
 #######################
 ##2 ~Replication Data##
 #######################
-data <- read.csv("C:/Users/Liam McLaughlin/OneDrive - University of Edinburgh/Desktop/Dissertation data/Data from abroad.csv",header = FALSE)
+data <- read.csv("C:/Users/Liam McLaughlin/OneDrive - University of Edinburgh/Desktop/Dissertation data/Data from Donaldson.csv",header = FALSE)
 library(tidyverse)
 data<-data |>rename(Country = V1, Actual= V2, Predicted = V3)
 data<-mutate(data, Country = as.character(Country), 
